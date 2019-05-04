@@ -7,7 +7,7 @@ class Owner
 	}
 	public void Phonetasking()
 	{
-		System.out.println("Hi, Sir! What's up today?? Sorry to say this sentences");	
+		System.out.println("Hi, Sir! What's up today?? Sorry to say to you this sad sentences");	
 		System.out.println(owner + "is calling. Will you call later,please??");
 	}
 }
