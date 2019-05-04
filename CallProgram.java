@@ -1,13 +1,14 @@
 class Owner
 {
-	static String owner;//owner의 값을 고정시킨다.
+	static String owner;
 	public Owner(String owner)
 	{
 		Owner.owner = owner;
 	}
 	public void Phonetasking()
 	{
-		System.out.println(owner + "가 통화 중이다. 다음에 다시 연락해 주세요.");
+		System.out.println("Hi, Sir! What's up today?? Sorry to say this sentences");	
+		System.out.println(owner + "is calling. Will you call later,please??");
 	}
 }
 class Talking extends Owner
@@ -30,7 +31,7 @@ class Talking extends Owner
 	}
 	public void Talktasking()
 	{
-		System.out.println(owner + "가 " + whenstart + "부터 " + whenfinish + "까지 " + room + "호 룸에서 회의 중이십니다.");
+		System.out.println(owner + "is in " + room + "room from " whenstart + " to " + whenfinish);
 	}
 }
 class Nothere extends Talking
@@ -43,14 +44,14 @@ class Nothere extends Talking
 	}
 	public void Notheretasking()
 	{
-		System.out.println(owner + "가 " + whenstart + "부터 " + whenfinish + "까지 " + where + "로 출장나가셨습니다.");
+		System.out.println(owner + "is gone to " + where + " from " + whenstart + " to " + whenfinish);
 	}
 }
 public class MainClass
 {
 	public static void main(String[] args) {
-		Owner[] doings = {new Owner("조성수"), new Talking("3PM", "6PM", "504"),
-				new Nothere("11AM", "3PM", "압구정동")};
+		Owner[] doings = {new Owner("Jo"), new Talking("3PM", "6PM", "504"),
+				new Nothere("11AM", "3PM", "GangNamGu")};
 		for(Owner d13 : doings)
 		{
 			if(d13 instanceof Nothere)
