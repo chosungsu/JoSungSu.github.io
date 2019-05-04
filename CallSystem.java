@@ -7,7 +7,8 @@ class Owner
 	}
 	public void Phonetasking()
 	{
-		System.out.println(owner + "is calling. Will you call later,please??");
+		System.out.println("Hi, Sir!! What's up??");
+		System.out.println("Sorry " + owner + "is calling. Will you call later,please??");
 	}
 }
 class Talking extends Owner
